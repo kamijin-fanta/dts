@@ -1,0 +1,13 @@
+{
+  "name": "dts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "typescript": "^2.7.1",
+    "glob": "^7.1.2"
+  },
+  "dependencies": {
+  }
+}
