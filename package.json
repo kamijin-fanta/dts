@@ -4,13 +4,17 @@
   "main": "index.js",
   "license": "MIT",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "test": "node ./scripts/test.js"
   },
   "devDependencies": {
-    "typescript": "^2.7.1",
-    "glob": "^7.1.2"
+    "glob": "^7.1.2",
+    "jest": "^22.1.4",
+    "ts-jest": "^22.0.2",
+    "typescript": "^2.7.1"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
