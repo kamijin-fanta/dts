@@ -8,20 +8,16 @@
     "noImplicitThis": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
-    "baseUrl": "../",
+    "baseUrl": "../packages",
     "typeRoots": [
-      "../packages/"
+      "./packages"
     ],
     "types": [
       "jest"
     ],
     "jsx": "react",
-    "forceConsistentCasingInFileNames": true,
+    "forceConsistentCasingInFileNames": false,
     "paths": {
     }
-  },
-  "files": [
-    "**/*.ts",
-    "**/*.d.ts"
-  ]
+  }
 }
