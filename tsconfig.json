@@ -15,16 +15,13 @@
     "types": [
       "jest"
     ],
-    "jsx": "react",
+    "noEmit": true,
     "forceConsistentCasingInFileNames": true,
     "paths": {
-      "@vx/axis": [
-          "vx__axis"
-      ]
     }
   },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx"
+  "files": [
+      "index.d.ts",
+      "index.test.ts"
   ]
 }

@@ -10,7 +10,7 @@
     "strictFunctionTypes": true,
     "baseUrl": "../",
     "typeRoots": [
-      "../"
+      "../packages/"
     ],
     "types": [
       "jest"
@@ -18,13 +18,10 @@
     "jsx": "react",
     "forceConsistentCasingInFileNames": true,
     "paths": {
-      "@vx/axis": [
-          "vx__axis"
-      ]
     }
   },
-  "include": [
+  "files": [
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.d.ts"
   ]
 }

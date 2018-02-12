@@ -1,5 +1,6 @@
 {
-  "name": "va__axis",
+  "name": "@vx/axis",
+  "version": "0.0.1",
   "private": true,
   "jest": {
     "transform": {
@@ -16,8 +17,14 @@
     ],
     "globals": {
       "ts-jest": {
-        "tsConfigFile": "<rootDir>/hoge-tsconfig.json"
+        "tsConfigFile": "tsconfig.json"
       }
     }
+  },
+  "devDependencies": {
+    "@types/react": "^16.0.36",
+    "@vx/axis": "^0.0.158",
+    "prettier": "^1.10.2",
+    "react": "^16.2.0"
   }
 }
