@@ -32,15 +32,39 @@ it('genBins', () => {
 });
 
 it('genStats', () => {
-  let res = mockData.genBins(10, 10);
+  let res = mockData.genStats(10);
   expect(res).toHaveLength(10);
-  expect(typeof res[0].bin).toEqual('number');
-  expect(res[0].bins).toHaveLength(10);
-  expect(typeof res[0].bins[0].bin).toEqual('number');
-  expect(typeof res[0].bins[0].count).toEqual('number');
+  expect(typeof res[0].binData[0].count).toEqual('number');
+  expect(typeof res[0].binData[0].value).toEqual('number');
+  expect(typeof res[0].boxPlot.x).toEqual('string');
+  expect(typeof res[0].boxPlot.min).toEqual('number');
+  expect(typeof res[0].boxPlot.outliers[0]).toEqual('number');
 });
 
-it('hoge', () => {
-  let res = (mockData as any).genStats(10);
-  console.log(res);
+it('genStats', () => {
+  let res = mockData.genStats(10);
+  expect(res).toHaveLength(10);
+  expect(typeof res[0].binData[0].count).toEqual('number');
+  expect(typeof res[0].binData[0].value).toEqual('number');
+  expect(typeof res[0].boxPlot.x).toEqual('string');
+  expect(typeof res[0].boxPlot.min).toEqual('number');
+  expect(typeof res[0].boxPlot.outliers[0]).toEqual('number');
+});
+
+it('appleStock', () => {
+  let res = mockData.appleStock;
+  expect(typeof res[0].date).toEqual('string');
+  expect(typeof res[0].close).toEqual('number');
+});
+
+it('letterFrequency', () => {
+  let res = mockData.letterFrequency;
+  expect(typeof res[0].letter).toEqual('string');
+  expect(typeof res[0].frequency).toEqual('number');
+});
+
+it('browserUsage', () => {
+  let res = mockData.browserUsage;
+  expect(typeof res[0].date).toEqual('string');
+  expect(typeof res[0]['Google Chrome']).toEqual('string');
 });
